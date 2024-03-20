@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="static/styles1.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+            <span>My Portfolio</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Social</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat arcu nec mauris interdum, a facilisis mauris dignissim. Nulla facilisi. Mauris vehicula sit amet lacus vitae fermentum.</p>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="divider"></section>
+
+    <div class="container">
+        <h1>Projects</h1>
+        <!-- Repeat the project section for the remaining projects -->
+        <div class="project">
+            <h2>Project 1</h2>
+            <p>Description of project 1 goes here.</p>
+            <img src="{{ url_for('static', filename='project1.jpg') }}" alt="Project 1">
+            <a href="#">View Project</a>
+        </div>
+        <div class="project 2">
+            <h2>Project 1</h2>
+            <p>Description of project 1 goes here.</p>
+            <img src="{{ url_for('static', filename='project1.jpg') }}" alt="Project 1">
+            <a href="#">View Project</a>
+        </div>
+        <div class="project 3">
+            <h2>Project 1</h2>
+            <p>Description of project 1 goes here.</p>
+            <img src="{{ url_for('static', filename='project1.jpg') }}" alt="Project 1">
+            <a href="#">View Project</a>
+        </div>
+        <div class="project 4">
+            <h2>Project 1</h2>
+            <p>Description of project 1 goes here.</p>
+            <img src="{{ url_for('static', filename='project1.jpg') }}" alt="Project 1">
+            <a href="#">View Project</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+        <p><a href="#">Contact Me</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background color */
+}
+
+header {
+    background-color: #1a1a1a; /* Dark silver background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px; /* Adjust the height of the logo */
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #ffae42; /* Accent color on hover */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #fff; /* White text color */
+}
+
+.project {
+    background-color: #1a1a1a; /* Dark silver background color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-bottom: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project a {
+    color: #ffae42; /* Accent color for link */
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1a1a1a; /* Dark silver background color */
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #fff; /* White text color */
+}
+
+footer a {
+    color: #ffae42; /* Accent color for link */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* About Me section */
+.about {
+    background-color: #1a1a1a; /* Dark silver background color */
+    padding: 50px 0;
+}
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .about-content {
+    width: calc(50% - 20px); /* Adjust the width of the content area */
+    padding: 0 20px;
+}
+
+.about .about-content h2,
+.about .about-content p {
+    color: #fff; /* White text color */
+}
+
+.about .about-image {
+    width: calc(50% - 20px); /* Adjust the width of the image area */
+    padding: 0 20px;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Divider */
+.divider {
+    height: 2px;
+    background-color: #ffae42; /* Accent color */
+    margin: 20px 0;
+}
