@@ -1,12 +1,7 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212; /* Dark background color */
-}
+/* Header Section */
 
 header {
-    background-color: #1a1a1a; /* Dark silver background color */
+    background-color: #313131; /* Dark silver background color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
     padding: 10px 20px;
     display: flex;
@@ -49,8 +44,23 @@ h1 {
     color: #fff; /* White text color */
 }
 
+
+/* Body Section */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background color */
+}
+
+
+/* Project Section */
+
+
 .project {
-    background-color: #1a1a1a; /* Dark silver background color */
+    background-color: #313131; /* Dark silver background color */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
@@ -70,6 +80,10 @@ h1 {
 .project a:hover {
     text-decoration: underline;
 }
+
+
+/* Footer Section */
+
 
 footer {
     background-color: #1a1a1a; /* Dark silver background color */
@@ -93,9 +107,11 @@ footer a:hover {
 
 
 /* About Me section */
+
+
 .about {
     background-color: #1a1a1a; /* Dark silver background color */
-    padding: 50px 0;
+    padding: 10px 0;
 }
 
 .about .container {
@@ -116,17 +132,53 @@ footer a:hover {
 
 .about .about-image {
     width: calc(50% - 20px); /* Adjust the width of the image area */
-    padding: 0 20px;
+    padding: 0 80px;
 }
 
 .about img {
-    max-width: 100%;
+    max-width: 48%;
     height: auto;
+    border: 2px solid #ffae42;
+    border-radius: 5px;
 }
 
-/* Divider */
+.about .divider {
+    width: 2px;
+    height: 100px; /* Adjust the height of the divider */
+    background-color: #ffae42; /* Accent color */
+    margin: 0 20px; /* Adjust the margin as needed */
+}
+
+
+/* Horizontal Divider */
+
+
 .divider {
     height: 2px;
     background-color: #ffae42; /* Accent color */
     margin: 20px 0;
+}
+
+
+/* Ripple effect (currently not working) */
+
+
+.ripple {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    border-radius: 50%;
+    animation: rippleEffect 1s linear infinite;
+    pointer-events: none; /* Make the ripple element not interactable */
+    z-index: 0; /* Ensure the ripple is behind other elements */
+}
+
+@keyframes rippleEffect {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
 }
