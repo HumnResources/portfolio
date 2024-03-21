@@ -5,31 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="static/index/index5.css">
-    <script src="static/scripts/ripple.js"></script>
-    <style>
-        /* Define ripple styles */
-        .ripple {
-            position: absolute;
-            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-            border-radius: 50%;
-            animation: rippleEffect 1s linear infinite;
-            pointer-events: none; /* Make the ripple element not interactable */
-            z-index: 0; /* Ensure the ripple is behind other elements */
-        }
-        @keyframes rippleEffect {
-            0% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            100% {
-                transform: scale(2);
-                opacity: 0;
-            }
-        }
-        </style>
+    <link rel="stylesheet" href="static/index/index.css">
 </head>
-
 
 <body>
     <header>
@@ -44,7 +21,6 @@
             </ul>
         </nav>
     </header>
-
 
     <section class="about">
         <div class="container">
@@ -61,9 +37,6 @@
 
     <section class="divider"></section>
 
-    <!-- Add the ripple effect element -->
-    <div class="ripple"></div>
-    
     <div class="container">
         <h1></h1>
         <!-- Repeat the project section for the remaining projects -->
@@ -77,25 +50,38 @@
                 <img src="static/images/homeserver-rack-demo.jpg">
             </div>
         </div>
-    </div>
     
-        <div class="project 2">
-            <h2>Tic-Tac-Toe</h2>
-            <p>A complete implementation of the age old classic, Tic Tac Toe! Play against a range of difficult AI opponents. Can you beat the impossible AI?</p>
-            <img src="{{ url_for('static', filename='project1.jpg') }}" alt="Project 1">
-            <a href="https://humnresources.github.io/TicTacToe/public/game.html">View Project</a>
+        <div class="project alternate">
+            <div class="project-image">
+                <img src="static/images/TicTacToe.png">
+            </div>
+            <div class="project-content">
+                <h2>Tic-Tac-Toe</h2>
+                <p>A complete implementation of the age old classic, Tic Tac Toe! Play against a range of difficult AI opponents. Can you beat the impossible AI?</p>
+                <a href="https://humnresources.github.io/TicTacToe/public/game.html">View Project</a>
+            </div>
         </div>
-        <div class="project 3">
-            <h2>KanBan Board</h2>
-            <p>Description of project 1 goes here.</p>
-            <img src="{{ url_for('static', filename='project1.jpg') }}" alt="Project 1">
-            <a href="#">View Project</a>
+
+        <div class="project">
+            <div class="project-content">
+                <h2>KanBan Board</h2>
+                <p>A random series of words ...</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='project1.jpg') }}">
+            </div>
         </div>
-        <div class="project 4">
-            <h2>Discord Media Bot</h2>
-            <p>Description of project 1 goes here.</p>
-            <img src="{{ url_for('static', filename='project1.jpg') }}" alt="Project 1">
-            <a href="#">View Project</a>
+
+        <div class="project alternate">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='project1.jpg') }}">
+            </div>
+            <div class="project-content">
+                <h2>Discord Media Bot</h2>
+                <p>A random series of words ...</p>
+                <a href="#">View Project</a>
+            </div>
         </div>
     </div>
 
@@ -103,6 +89,5 @@
         <p>&copy; 2024 My Portfolio</p>
         <p><a href="#">Contact Me</a></p>
     </footer>
-
 </body>
 </html>
